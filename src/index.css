@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+/* Leaflet overrides */
+.leaflet-container {
+  background: #1a1a2e;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1f2937;
+  color: white;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #1f2937;
+}
+
+.leaflet-control-zoom a {
+  background: #374151 !important;
+  color: white !important;
+  border-color: #4b5563 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #4b5563 !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(31, 41, 55, 0.8) !important;
+  color: #9ca3af !important;
+  font-size: 10px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #60a5fa !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Range input styling */
+input[type="range"] {
+  height: 4px;
+  border-radius: 2px;
+  background: #374151;
+}
+
+/* Animation */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
